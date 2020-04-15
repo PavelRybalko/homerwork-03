@@ -16,17 +16,16 @@ a {
 }
 
 .main-menu {
-  width: 690px;
   display: block;
-  margin: 0px auto;
-  padding-top: 70px;
+  text-align: center;
+  padding: 70px 0px 100px 0px;
   list-style: none;
   text-transform: uppercase;
   color: #626262;
 }
 
 li {
-  margin: 0px 54px;
+  margin-right: 100px;
   display: inline-block;
 }
 
@@ -51,11 +50,18 @@ a:hover {
   width: 420px;
   display: inline-block;
   margin-right: 56px;
-  padding-top: 100px;
+  margin-bottom: 100px;
+  line-height: 24px;
 }
 
 .short-article:nth-child(2n) {
   margin-right: 0px;
+}
+
+
+.short-article:nth-last-child(3),
+.short-article:nth-last-child(2) {
+  margin-bottom: 0px;
 }
 
 .item-category {
@@ -79,7 +85,7 @@ a:hover {
 .bottom-button {
   display: block;
   padding: 20px 30px;
-  margin: 80px auto;
+  margin: 20px auto 60px;
   font-size: 20px;
   color: #6c6c6c;
   border: 1px solid;
@@ -88,5 +94,5 @@ a:hover {
 }
 
 button:hover {
-  color: #57c6f8;
+  color: #03a9f4;
 }
