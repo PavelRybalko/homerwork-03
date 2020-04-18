@@ -1,12 +1,24 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
   font-family: "Playfair Display", serif;
   font-size: 14px;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h2,
@@ -18,10 +30,11 @@ a {
 .main-menu {
   display: block;
   text-align: center;
-  padding: 70px 0px 100px 0px;
+  padding: 70px 0px 96px 0px;
   list-style: none;
   text-transform: uppercase;
   color: #626262;
+  font-size: 0;
 }
 
 li {
@@ -34,6 +47,7 @@ li:last-child {
 }
 
 a {
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -44,20 +58,24 @@ a:hover {
 .container {
   width: 900px;
   margin: 0px auto;
+  font-size: 0;
 }
 
 .short-article {
   width: 420px;
   display: inline-block;
-  margin-right: 56px;
+  margin-right: 60px;
   margin-bottom: 100px;
   line-height: 24px;
+}
+
+.short-article p {
+  font-size: 14px;
 }
 
 .short-article:nth-child(2n) {
   margin-right: 0px;
 }
-
 
 .short-article:nth-last-child(3),
 .short-article:nth-last-child(2) {
@@ -69,23 +87,23 @@ a:hover {
   font-size: 14px;
   text-transform: uppercase;
   color: #c7c1b6;
-  padding: 30px 0px;
+  padding: 30px 0px 26px;
 }
 
 .item-header {
   font-size: 2.143rem;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-weight: normal;
 }
 
 .item-text {
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 
 .bottom-button {
   display: block;
   padding: 20px 30px;
-  margin: 20px auto 60px;
+  margin: 24px auto 60px;
   font-size: 20px;
   color: #6c6c6c;
   border: 1px solid;
